@@ -1,0 +1,45 @@
+tesseract is use for the text extraact from the image/pdf/txt file. It is not designed for barcode/QR code recognition. We should use a barcode/QR specific lib.
+
+khanamiryan/qrcode-detector-decoder
+Reads QR codes only
+Doesn’t support 1D barcodes (UPC, EAN, Code128, etc.)
+
+
+synergi-tech/php-barcode-reader
+Experimental — attempts to decode 1D barcodes
+Slow, may be inaccurate
+Not maintained actively
+No CLI required
+
+zbarimg (CLI) 
+shell exe
+
+ZXing (via Java bridge or shell call)
+advance setup
+
+
+ there are some PHP libraries that can read barcodes (especially QR codes) without using CLI tools or external binaries, but they are very limited in barcode format support and accuracy.
+ 1. khanamiryan/qrcode-detector-decoder
+ 1. khanamiryan/qrcode-detector-decoder
+ 
+ 
+ 
+ZBar with Laravel
+ZBar is a fast, open-source barcode reader that supports:
+1D barcodes:
+UPC-A / UPC-E
+EAN-13 / EAN-8
+Code 39
+Code 128
+Interleaved 2 of 5
+
+2D barcodes:
+QR codes
+Data Matrix
+
+sudo apt install zbar-tools
+zbarimg --version
+
+
+zbarimg "/home/suba/Documents/ocr-app/storage/app/uploads/6851f09ae0385.jpg" 
+ 
